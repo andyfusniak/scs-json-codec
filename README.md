@@ -81,7 +81,7 @@ echo "SELECT data FROM sessions WHERE token = '2-WtseZd-as_2NbDXD7C0Jd85A_K1-ZRS
 # Example code
 
 ```go
-// Initialize a new session manager and configure the session lifetime.
+	// Initialize a new session manager and configure the session lifetime.
 	sessionManager := scs.New()
 
 	// Open a SQLite3 database.
@@ -96,7 +96,7 @@ echo "SELECT data FROM sessions WHERE token = '2-WtseZd-as_2NbDXD7C0Jd85A_K1-ZRS
 	sessionManager.Store = sqlite3store.New(db)
 	sessionManager.Lifetime = 24 * time.Hour
 
-  // *** Set the codec to JSONCodec ***
+	// *** Set the codec to JSONCodec ***
 	sessionManager.Codec = codec.JSONCodec{}
 
 	mux := http.NewServeMux()
