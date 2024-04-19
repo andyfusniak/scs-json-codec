@@ -67,14 +67,16 @@ The following command can be used to retrieve the session data for a specific to
 SELECT token, data, datetime(expiry, 'julianday') FROM sessions WHEN token = '<token>';
 ```
 
-![jq example](docs/screenshots/jq1.png)
-
-
-From your terminal, you can use the following command to retrieve the session data for a specific token:
+Or, directly from your terminal, you can use the following command to retrieve the session data for a specific token:
 
 ```shell
 echo "SELECT data FROM sessions WHERE token = '2-WtseZd-as_2NbDXD7C0Jd85A_K1-ZRS6aSf9Mg0YA'" | sqlite3 -json sessions.db | jq -r '.[].data' | jq
 ```
+
+![jq example](docs/screenshots/jq1.png)
+
+
+
 
 # Example code
 
@@ -130,7 +132,7 @@ If you encounter the following error messages, it is likely that the `sessions` 
 
 ![](docs/screenshots/server-error-no-such-table.png)
 
-To fix this paste the SQL commands to create the `sessions` table into the SQLite3 command line tool.
+To fix this, paste the SQL commands to create the `sessions` table into the SQLite3 command line tool.
 
 ![](docs/screenshots/sqlite3-copy-paste.png)
 
@@ -138,4 +140,3 @@ To fix this paste the SQL commands to create the `sessions` table into the SQLit
 # License
 
 This code is released under the MIT License. See LICENSE for more information.
-```
