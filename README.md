@@ -81,6 +81,7 @@ echo "SELECT data FROM sessions WHERE token = '2-WtseZd-as_2NbDXD7C0Jd85A_K1-ZRS
 # Example code
 
 ```go
+func run() error {
 	// Initialize a new session manager and configure the session lifetime.
 	sessionManager := scs.New()
 
