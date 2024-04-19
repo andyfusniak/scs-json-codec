@@ -2,7 +2,13 @@
 
 This module provides a JSON codec for Alex Edwards' [SCS: HTTP Session Management for Go](https://github.com/alexedwards/scs/). It is not recommended for use in production but rather the codec is designed to be useful whilst developing locally.
 
-SCS uses its default `GobCodec` which is more efficent and suitable for production. However, it is not human readable making it harder to work with during development. By encoding the session data as JSON it is easier to inspect the session data in the store.
+SCS uses its default `GobCodec` which is more efficent and suitable for production. However, it is not human readable making it harder to work with during development.
+
+The following screenshot shows the session data stored in the SQLite3 database using the default `GobCodec`. The session data is stored as a binary blob in the `data` column. There is no easy way to inspect the session data.
+
+![gob data inspection](docs/screenshots/gob-data-inspection.png)
+
+By encoding the session data as JSON it is easier to inspect the session data in the store.
 
 # Example usage
 
