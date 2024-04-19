@@ -124,7 +124,7 @@ echo "SELECT data FROM sessions WHERE token = '2-WtseZd-as_2NbDXD7C0Jd85A_K1-ZRS
 
 # Trouble shooting
 
-## no such table: sesssions
+## no such table: sessions
 
 If you encounter the following error messages, it is likely that the `sessions` table has not been created in the database.
 
