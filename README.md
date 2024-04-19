@@ -1,6 +1,6 @@
 # scs-json-codec
 
-This module provides a JSON codec for Alex Edwwards' [SCS: HTTP Session Management for Go](https://github.com/alexedwards/scs/). It is not recommended for use in production but rather the codec is designed to be useful whilst developing locally.
+This module provides a JSON codec for Alex Edwards' [SCS: HTTP Session Management for Go](https://github.com/alexedwards/scs/). It is not recommended for use in production but rather the codec is designed to be useful whilst developing locally.
 
 SCS uses its default `GobCodec` which is more efficent and suitable for production. However, but it is not human readable making it harder to work with during development. By encoding the session data as JSON it is easier to inspect the session data in the database.
 
