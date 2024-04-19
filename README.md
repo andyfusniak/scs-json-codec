@@ -42,7 +42,7 @@ CREATE INDEX sessions_expiry_idx ON sessions(expiry);
 
 Visit http://localhost:4000/put to store a message in the session data. Visit http://localhost:4000/get to retrieve the message from the session data.
 
-Using the browser developer tools, you can inspect the session data stored in the browser cookie. In the following screenshot, the session data is stored in the SCS default `session` cookie. The value here is `2-WtseZd-as_2NbDXD7C0Jd85A_K1-ZRS6aSf9Mg0YA`. Replace this value with the one in your browser cookie whjen running the following SQL commands.
+Using the browser developer tools, you can inspect the session data stored in the browser cookie. In the following screenshot, the session data is stored in the SCS default `session` cookie. The value here is `2-WtseZd-as_2NbDXD7C0Jd85A_K1-ZRS6aSf9Mg0YA`. Replace this value with the one in your browser cookie when running the following SQL commands.
 
 ![inspecting browser cookies](docs/screenshots/browser-cookie.png)
 
